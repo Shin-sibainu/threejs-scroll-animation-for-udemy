@@ -1,5 +1,6 @@
 import "./style.css";
 import * as THREE from "three";
+import spaceBG from "./bg/space.jpg";
 
 // Canvas
 const canvas = document.querySelector("#webgl");
@@ -15,7 +16,7 @@ const scene = new THREE.Scene();
 
 //背景用のテクスチャ
 const textureLoader = new THREE.TextureLoader();
-const bgTexture = textureLoader.load("bg/space.jpg");
+const bgTexture = textureLoader.load(spaceBG);
 scene.background = bgTexture;
 
 //GridHelperの設定
